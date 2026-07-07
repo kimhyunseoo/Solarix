@@ -17,6 +17,7 @@ const STREETS = [
   'Broadway',
   'Garnet Ave',
   'Sports Arena Blvd',
+  'Torrey Pines Rd',
 ]
 
 function randomBetween(min, max) {
