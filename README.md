@@ -1,5 +1,7 @@
 # roadrisk-ai
 
+Contributors: 김광민
+
 AI-powered road damage detection and maintenance prioritization using computer vision and multimodal data.
 
 Citizens upload a road photo, AI detects cracks and potholes, and combines that with rainfall, traffic volume, and road type data to diagnose pothole development risk (Low/Medium/High). Demo region: San Diego, CA.
