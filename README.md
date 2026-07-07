@@ -1,6 +1,6 @@
 # roadrisk-ai
 
-Contributors: 김광민 (branch: gwangmin-feature)
+Contributors: 김광민, 최지윤
 
 AI-powered road damage detection and maintenance prioritization using computer vision and multimodal data.
 
