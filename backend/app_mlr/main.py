@@ -11,7 +11,7 @@ from app_mlr.llm_guide import generate_usage_guide
 from app_mlr.mock_model import predict
 from app_mlr.schemas import ForecastResponse, HealthResponse, SlotForecast
 
-MODEL_NAME = "Dacon-MLR-v1 (7-day lag / 30-min)"
+MODEL_NAME = "Dacon-RF-v1 (7-day lag / 30-min)"
 FACILITY_NAME = "Dangjin Residential Plant"
 LOCATION = "Dangjin, South Chungcheong"
 
@@ -33,8 +33,8 @@ def health() -> HealthResponse:
 
 
 @app.get("/api/forecast", response_model=ForecastResponse)
-def forecast(date: str | None = Query(None, description="YYYY-MM-DD, demo/test용. 안 주면 내일 날짜")) -> ForecastResponse:
-    target_date = dt.date.fromisoformat(date) if date else dt.date.today() + dt.timedelta(days=1)
+def forecast(date: str | None = Query(None, description="YYYY-MM-DD, demo/test용. 안 주면 오늘 날짜")) -> ForecastResponse:
+    target_date = dt.date.fromisoformat(date) if date else dt.date.today()
 
     try:
         history = load_history(str(HISTORY_CSV_PATH))

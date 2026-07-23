@@ -24,7 +24,7 @@ if _API_KEY:
 
 def _template_guide(peak_h: int, peak_m: int, low_h: int, low_m: int) -> str:
     return (
-        f"Tomorrow's generation is expected to peak around {peak_h:02d}:{peak_m:02d}. "
+        f"Today's generation is expected to peak around {peak_h:02d}:{peak_m:02d}. "
         "High-load appliances such as washing machines, dryers, or electric vehicle charging "
         "are recommended during this window to make the most of surplus generation.\n\n"
         f"Generation is expected to be minimal around {low_h:02d}:{low_m:02d}. "
