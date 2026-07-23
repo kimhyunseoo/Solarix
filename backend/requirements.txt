@@ -1,0 +1,13 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pandas>=2.0
+numpy>=1.26,<2.0
+google-cloud-storage>=2.16
+google-cloud-aiplatform>=1.60
+python-dotenv>=1.0
+pydantic-settings>=2.2
+
+# TensorFlow is NOT required for the production path (INFERENCE_SOURCE=vertex_endpoint) —
+# inference runs on Vertex AI's side, this service just calls the endpoint over HTTP.
+# It's only needed for local dev (INFERENCE_SOURCE=local_tf) and scripts/export_to_savedmodel.py.
+# See requirements-dev.txt.

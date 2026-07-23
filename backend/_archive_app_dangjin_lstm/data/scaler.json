@@ -1,0 +1,44 @@
+{
+  "features": [
+    "shortwave_radiation",
+    "diffuse_radiation",
+    "temperature",
+    "humidity",
+    "cloud_cover",
+    "precipitation",
+    "wind_speed",
+    "solar_elevation",
+    "generation_kwh",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "feature_mean": [
+    268.8087158203125,
+    110.09168243408203,
+    13.938700675964355,
+    75.3945541381836,
+    59.05077362060547,
+    0.16749908030033112,
+    13.632795333862305,
+    23.007537841796875,
+    541.2023315429688,
+    0.003735889680683613,
+    -0.453757107257843
+  ],
+  "feature_std": [
+    262.3306579589844,
+    94.89849853515625,
+    9.815753936767578,
+    15.289949417114258,
+    42.743038177490234,
+    0.8443105220794678,
+    7.5711989402771,
+    25.871923446655273,
+    616.6681518554688,
+    0.7673634886741638,
+    0.45350751280784607
+  ],
+  "target_mean": 0.0,
+  "target_std": 1.0,
+  "_note": "placeholder model (lstm_model_1.keras / train_lstm_1.py) does not scale the target \u2014 outputs are already in kWh. Replace this whole file when the real production model+scaler are ready."
+}
